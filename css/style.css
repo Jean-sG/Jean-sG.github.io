@@ -1,4 +1,10 @@
-#peerinfo{
-    height: 150px;
+.troplong{
+    height: 270px;
     overflow: scroll;
+}
+
+.copyright{
+    float: right;
+    text-align: left;
+    padding-right: 30px;
 }
