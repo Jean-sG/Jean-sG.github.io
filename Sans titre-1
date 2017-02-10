@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to add a new element to the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = [];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+var test = ["0.5", "0.75", "0.8"];
+    fruits.push(test);
+    document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
