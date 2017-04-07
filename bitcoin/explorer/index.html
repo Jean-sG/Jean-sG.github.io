@@ -29,6 +29,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TP <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">TP 1</a></li>
+                <li><a href="../index.html">TP 2</a></li>
               </ul>
             </li>
           </ul>
@@ -43,25 +44,23 @@
         <p>Vous &ecirc;tes sur la page Explorer. Elle apparait &agrave; partir du TP 2.</p>
       </div>
         
-  <div class="form-group">
-    <label for="InputAdress">Entrez une adresse !</label>
-    <input type="adress" class="form-control" id="InputAdress" placeholder="Entrez une adresse !">
-  </div>
-  <button class="btn btn-default" id="boutonAdress">Envoyer</button>
+ <label>Saisir l'adresse:</label>
+
+<input id="numb" class="form-control">
+
+<button type="button" onclick="byAdress()">Submit</button>
 
         <p></p><p></p>
-        
-  <div class="form-group">
-    <label for="InputAdress">Ou, choisissez une file :</label>
-<select multiple class="form-control">
+
+    <label>Ou, choisissez une file :</label>
+<select multiple class="form-control" onclick="byFile()" id="fileChain">
   <option>info</option>
   <option>blockchaininfo</option>
   <option>mininginfo</option>
   <option>peerinfo</option>
-</select>  </div>
-
-      
-            <div id="resultat"></div>     
+</select>
+<p></p><p></p>
+            <p id="resultat"></p>     
 				
 
    <div id="footer">
