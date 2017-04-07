@@ -14,19 +14,19 @@ xmlhttp.send();
 
 function homePageLoading() {
     
-    url = 'http://bitcoin.mubiz.com/info';
+    url = 'https://bitcoin.mubiz.com/info';
     element = 'info';
     requeteApiWS(url, element);
     
-    url = 'http://bitcoin.mubiz.com/blockchaininfo';
+    url = 'https://bitcoin.mubiz.com/blockchaininfo';
     element = 'blockchaininfo';
     requeteApiWS(url, element);
     
-        url = 'http://bitcoin.mubiz.com/mininginfo';
+        url = 'https://bitcoin.mubiz.com/mininginfo';
     element = 'mininginfo';
     requeteApiWS(url, element);
     
-        url = 'http://bitcoin.mubiz.com/peerinfo';
+        url = 'https://bitcoin.mubiz.com/peerinfo';
     element = 'peerinfo';
     requeteApiWS(url, element);
 }

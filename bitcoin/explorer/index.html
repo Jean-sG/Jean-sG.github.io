@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="../../css/style.css"/>
       <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
   <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,24 +42,33 @@
         <h1>Explorer</h1>
         <p>Vous &ecirc;tes sur la page Explorer. Elle apparait &agrave; partir du TP 2.</p>
       </div>
-        <form>
+        
   <div class="form-group">
-    <label for="InputAdress">Entrez une adress</label>
+    <label for="InputAdress">Entrez une adresse !</label>
     <input type="adress" class="form-control" id="InputAdress" placeholder="Entrez une adresse !">
   </div>
-  <button type="submit" class="btn btn-default">Envoyer</button>
-</form>
+  <button class="btn btn-default" id="boutonAdress">Envoyer</button>
+
+        <p></p><p></p>
+        
+  <div class="form-group">
+    <label for="InputAdress">Ou, choisissez une file :</label>
+<select multiple class="form-control">
+  <option>info</option>
+  <option>blockchaininfo</option>
+  <option>mininginfo</option>
+  <option>peerinfo</option>
+</select>  </div>
+
       
-    
-      
+            <div id="resultat"></div>     
 				
 
    <div id="footer">
        <p class="copyright"> GUILLAUME Jean | | LAURANCON Julien -  © 2017 ESILV IF Project <br><a href="https://github.com/Jean-sG/Jean-sG.github.io" target="_blank">View on GitHub</a></p>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../js/0210.js"></script>
-       <script type="text/javascript">homePageLoading();</script>
+
+<script src="../../js/form.js"></script>
       </div>
       </div>
   </body>
