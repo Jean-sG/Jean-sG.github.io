@@ -23,8 +23,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Explorer</a></li>
-            <li><a href="./tp1.html">Tp 1</a></li>
+            <li><a href="./index.html">Explorer</a></li>
+            <li class="active"><a href="#">Tp 1</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -33,35 +33,37 @@
     <div id="container" >
       
       <div class="jumbotron" style="border-radius: 6px;">
-        <h1>Explorer</h1>
-        <p>Vous &ecirc;tes sur la page Explorer. Elle apparait &agrave; partir du TP 2.</p>
+        <h1>TP 1</h1>
+        <p>Vous &ecirc;tes sur la page Tp 1. Appel JSON et page d'informations</p>
       </div>
         
- <label>Saisir l'adresse:</label>
+        <div class="col-lg-12 col-xs-6">
+        <h1 class="page-header">Info</h1>
+    	<pre class="troplong"><code id="info"></code></pre>
+	</div>
+      
+    <div class="col-lg-12 col-xs-6">
+        <h1 class="page-header">BlockChain Info</h1>
+    	<pre class="troplong"><code id="blockchaininfo"></code></pre>
+	</div>
+    
+    <div class="col-lg-12 col-xs-6">
+        <h1 class="page-header">Mining Info</h1>
+    	<pre class="troplong"><code id="mininginfo"></code></pre>
+	</div> 
+    
+    <div class="col-lg-12 col-xs-6">
+              <h1 class="page-header">Peer Info</h1>
+    	<pre class="troplong"><code id="peerinfo"></code></pre>
+	</div>
 
-<input id="numb" class="form-control">
-
-<button type="button" onclick="byAdress()">Envoyer !</button>
-
-        <p></p><p></p>
-
-    <label>Ou, choisissez une file :</label>
-<select multiple class="form-control" onclick="byFile()" id="fileChain">
-  <option>info</option>
-  <option>blockchaininfo</option>
-  <option>mininginfo</option>
-  <option>peerinfo</option>
-</select>
-<p></p><p></p><p></p>
-         <label>Résultat de votre requete :</label>
-            <pre id="resultat" class="troplong"></pre>     
-				
 
    <div id="footer">
        <p class="copyright"> GUILLAUME Jean | | LAURANCON Julien -  © 2017 ESILV IF Project <br><a href="https://github.com/Jean-sG/Jean-sG.github.io" target="_blank">View on GitHub</a> - <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjean-sg.github.io%2Fbitcoin%2Fexplorer%2F" target="_blank">W3C Validated it!</a></p>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="../../js/form.js"></script>
+       <script src="../../js/0210.js"></script>
+       <script type="text/javascript">homePageLoading();</script>
       </div>
       </div>
   </body>
